@@ -1,14 +1,20 @@
 {
   "manifest_version": 2,
-
   "name": "Youtube Resizer",
-  "description": "Resize your youtube videos",
-  "version": "1.0",
+  "version": "0.1",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "description": "Resize and move your youtube video",
+
   "browser_action": {
     "default_icon": "icon-normal.png",
     "default_title": "Youtube Resizer",
     "default_popup": "popup.html"
   },
+
   "permissions": [
     "activeTab",
     "webNavigation",

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Youtube Resizer</title>
+    <link href="bootstrap.min.css" type="text/css"  rel="stylesheet"/>
+    <link href="bootstrap-switch.min.css" type="text/css" rel="stylesheet"/>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="bootstrap-switch.min.js"></script>
+    <script src="popup.js"></script>
+    <style>
+      body{width:200px; padding:20px;}
+    </style>
+  </head>
+  <body>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Resizing</label>
+        <div class="col-sm-10">
+          <input id="on" type="checkbox" name="my-checkbox">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="scale" class="col-sm-2 control-label">Scale</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="scale" value="1.0" min="0.1" step="0.05" max="3">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="x" class="col-sm-2 control-label">X</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="x" value="0" min="-2" step="0.02" max="2">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="y" class="col-sm-2 control-label">Y</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="y" value="0" min="-2" step="0.02" max="2">
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
